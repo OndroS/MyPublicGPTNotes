@@ -1,4 +1,4 @@
-## Command: Write a code structure for a following chrome plugin: When user activates the plugin in extension panel, plugin will ask if user wants scarp data from displayed website. When user confirm, code will scrap all the data from displayed webpage, then use this data to feed OpenAI davinci model API returning summary and explanation of given webpage data in separate window.
+## `Command:` Write a code structure for a following chrome plugin: When user activates the plugin in extension panel, plugin will ask if user wants scarp data from displayed website. When user confirm, code will scrap all the data from displayed webpage, then use this data to feed OpenAI davinci model API returning summary and explanation of given webpage data in separate window.
 
 \
 Here is a general structure for a Chrome plugin that does the tasks described above:
@@ -36,7 +36,7 @@ This code structure uses some functions and variables that are not defined in th
 
 
 
-## Command: Define scrapData function
+## `Command:` Define scrapData function
 
 
 scrapData is a function that would be responsible for extracting data from the website that is currently displayed in the user's browser. Here is one way that this function could be implemented:
@@ -57,7 +57,7 @@ function scrapData() {
 This implementation uses a regular expression to extract all the text from the HTML of the website, and then returns that text as the scraped data. This is just one possible way to implement the scrapData function, and other implementations may use different techniques for extracting data from the website.
 
 
-## Command: Define openai function
+## `Command:` Define openai function
 
 openai is a variable that would be used to access the OpenAI API. This variable could be an object that contains functions for interacting with the API, such as a summarize function and an explain function. Here is an example of how the openai variable could be defined:
 
@@ -105,7 +105,7 @@ var openai = {
 
 This implementation of the openai variable contains two functions: summarize and explain. These functions make requests to the OpenAI API using the request function (which is not defined in this code) to summarize and explain the provided text, respectively. Note that in order for these functions to work properly, you will need to replace YOUR_API_KEY with your own API key from OpenAI.
 
-## Command: Define displaySummary function
+## `Command:` Define displaySummary function
 
 displaySummary is a function that would be used to display the summary of the scraped data in the popup window. Here is one way that this function could be implemented:
 
@@ -120,7 +120,7 @@ function displaySummary(summary) {
 ```
 This implementation assumes that the HTML for the popup window includes an element with the ID summary, and that this element will be used to display the summary. The function simply gets a reference to this element and sets its text to the provided summary. Of course, this is just one possible way to implement the displaySummary function, and other implementations may use different techniques for displaying the summary in the popup window.
 
-## Command: Write a minimum 1500 character long blog post selling this plugin and explaining the advantages and possibilities.
+## `Command:` Write a minimum 1500 character long blog post selling this plugin and explaining the advantages and possibilities.
 
 Introducing the OpenAI Chrome Extension – a powerful tool for summarizing and explaining the content of any website with just a few clicks!
 
@@ -134,7 +134,7 @@ In addition, the OpenAI Chrome Extension is easy to use and integrates seamlessl
 
 So why not give the OpenAI Chrome Extension a try? Whether you're a busy professional looking to save time and stay informed, or a student trying to quickly understand complex concepts, this extension has something to offer. Try it out today and see how it can help you get the most out of your web browsing experience.
 
-## Command: Create a structure for a website selling this plugin.
+## `Command:` Create a structure for a website selling this plugin.
 
 Homepage: The homepage of the website would introduce the extension and highlight its key features and benefits. It could include a brief overview of what the extension does, as well as some screenshots or videos demonstrating how it works. The homepage could also include customer testimonials, links to download the extension, and a call-to-action to encourage visitors to try the extension.
 
